@@ -179,8 +179,8 @@ io_connect_t getEventDriver()
 
 bool isModifier(uint8_t virtualKey)
 {
-  static std::set<uint8_t> modifiers{s_shiftVK,      s_controlVK,      s_altVK,      s_superVK,      s_capsLockVK,
-                                     s_shiftRightVK, s_controlRightVK, s_altRightVK, s_superRightVK, s_fnVK};
+  static std::set<uint8_t> modifiers{s_shiftVK,      s_controlVK,      s_altVK,      s_superVK,     s_capsLockVK,
+                                     s_shiftRightVK, s_controlRightVK, s_altRightVK, s_superRightVK};
 
   return (modifiers.find(virtualKey) != modifiers.end());
 }
